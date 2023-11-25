@@ -14,11 +14,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/auth" element={<Auth />}>
+      <Route path="/veligroup/auth" element={<Auth />}>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
       </Route>
-      <Route path="/" element={<Home />}>
+      <Route path="/veligroup" element={<Home />}>
         <Route path="/add" element={<AddProduct />} />
         <Route path="/manufacture" element={<Manufacture />} />
         <Route path="/history" element={<ProductOperationHistory />} />
