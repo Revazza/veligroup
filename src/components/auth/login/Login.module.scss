@@ -1,0 +1,54 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 60px 40px 40px 40px;
+  box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+#passwordInput {
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.input_wrapper {
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 5px;
+  p {
+    position: absolute;
+    top: -32px;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.776);
+  }
+}
+
+.error_wrapper {
+  width: 100%;
+  word-break: break-all;
+  color: #ea5455;
+}
+
+.button_wrapper {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+
+#registerLink{
+  margin-top: 20px;
+  display: block;
+  font-size: 17px;
+}

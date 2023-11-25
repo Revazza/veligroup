@@ -1,0 +1,23 @@
+.container {
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  p {
+    font-family: "Noto Serif Georgian", serif;
+  }
+}
+
+#added {
+  background-color: #a7d397;
+}
+
+#updated {
+  background-color: #f9b572;
+}
+
+#deleted {
+  background-color: #ea5454bd;
+}

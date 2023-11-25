@@ -1,0 +1,55 @@
+.container {
+  width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#title {
+  text-align: center;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 30px;
+}
+#errorMsg {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Noto Serif Georgian", serif;
+  color: #EF6262;
+}
+
+.input_wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.459);
+  width: 20%;
+  margin: 20px auto 0 auto;
+  input {
+    font-size: 20px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.calculation_container {
+  p {
+    font-family: "Noto Serif Georgian", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+}
+
+.calculation_wrapper {
+  margin-top: 20px;
+}
+
+.button_wrapper {
+  margin-top: 20px;
+  button {
+    padding: 15px;
+    font-family: "Noto Serif Georgian", serif;
+    letter-spacing: 2px;
+  }
+}

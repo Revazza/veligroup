@@ -1,0 +1,74 @@
+.item_wrapper {
+  width: 100%;
+  min-height: 10%;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.item_info {
+  display: flex;
+  align-items: center;
+  p {
+    font-family: "Noto Serif Georgian", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  width: 80%;
+  justify-content: left;
+  gap: 20px;
+}
+
+.item_info_input {
+  font-size: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  width: 100px !important;
+  font-weight: 400;
+  font-family: "Noto Serif Georgian", serif;
+}
+
+.item_info_input::placeholder {
+  font-size: 15px;
+}
+
+.add_button {
+  width: 20%;
+  button {
+    padding: 10px 7px;
+    font-size: 17px;
+    font-family: "Noto Serif Georgian", serif;
+  }
+  display: flex;
+  gap:10px;
+}
+
+.update_btn{
+  background-color: #EF6262 !important;
+}
+
+.loading {
+  position: absolute;
+  left: 0;
+}
+
+#errorMsg {
+  color: #ea5455;
+}
+#sucessMsg {
+  color: #a7d397;
+}
+#sucessMsg,
+#errorMsg {
+  font-size: 18px;
+  font-family: "Noto Serif Georgian", serif;
+  padding-left: 10px;
+}
+
+

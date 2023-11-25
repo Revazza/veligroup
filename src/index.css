@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster+Two&family=Noto+Serif+Georgian:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&family=Young+Serif&display=swap");
+
+body{
+  overflow-x:hidden;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  font-family: "Noto Serif Georgian", serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}

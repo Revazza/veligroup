@@ -1,0 +1,21 @@
+.selection {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+select {
+  appearance: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 7px 15px;
+  font-size: 1.15rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}
