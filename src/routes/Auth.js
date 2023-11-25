@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import { REPO_NAME } from "../Api";
 
 function Auth() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function Auth() {
       return;
     }
     if (!token) {
-      navigate("/auth/login");
+      navigate(`${REPO_NAME}/auth/login`);
       return;
     }
 

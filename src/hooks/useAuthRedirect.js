@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import jwtDecode from "jwt-decode";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { api } from "../Api";
+import { REPO_NAME, api } from "../Api";
 
 function useAuthRedirerct() {
   const navigate = useNavigate();
@@ -17,7 +17,8 @@ function useAuthRedirerct() {
     }
 
     if (!token) {
-      navigate("/auth");
+      navigate(`${REPO_NAME}/auth/login`);
+      console.log("HAHA");
       return;
     }
 
@@ -33,7 +34,7 @@ function useAuthRedirerct() {
 
     } catch (error) {
       Cookies.remove("token");
-      navigate("/auth/login");
+      navigate("//auth/login");
     }
   }, [navigate]);
 }
