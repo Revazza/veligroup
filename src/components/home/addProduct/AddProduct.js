@@ -14,7 +14,6 @@ function AddProduct() {
       <AddGourd size="5x10" />
       <AddGourd size="10x20" />
       <AddSand fraction="0.5" />
-      <AddSand fraction="0.8" />
       <AddAdhesiveSolution />
     </div>
   );

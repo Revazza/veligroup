@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./ProductOperationHistoryItem.module.scss";
 import formatDateToGeorgian from "../../../../helperFunctions/formatDateToHumanReadable";
+import Button from "../../../../UI/button/Button";
+import { api } from "../../../../Api";
 
-function ProductOperationHistoryItem({ history }) {
+function ProductOperationHistoryItem({ history, onHistoryDelete }) {
   const {
+    id,
     status,
     actionName,
     preUpdatedQuantity,
@@ -28,23 +31,34 @@ function ProductOperationHistoryItem({ history }) {
       ? `დარჩა ${(preUpdatedQuantity - quantityChange)?.toFixed(2)}`
       : `დარჩა ${(preUpdatedQuantity - quantityChange)?.toFixed(2)}`;
 
+  const handleDeleteHistory = () => {
+    api.post(`/api/ProductHistory/RemoveProductHistory`, { id }).then((res) => {
+      onHistoryDelete(history)
+    });
+  };
+
   const localizedTime = new Date(createdAt).toString();
   return (
     <div id={styleId} className={styles.container}>
-      <p>{actionName}</p>
-      <p>
-        მარაგში იყო {preUpdatedQuantity?.toFixed(2)}
-        {unit}
-      </p>
-      <p>
-        {operation} {quantityChange?.toFixed(2)}
-        {unit}
-      </p>
-      <p>
-        {leftQuantity}
-        {unit}
-      </p>
-      <p>{formatDateToGeorgian(new Date(localizedTime))}</p>
+      <div className={styles.info_wrapper}>
+        <p>{actionName}</p>
+        <p>
+          მარაგში იყო {preUpdatedQuantity?.toFixed(2)}
+          {unit}
+        </p>
+        <p>
+          {operation} {quantityChange?.toFixed(2)}
+          {unit}
+        </p>
+        <p>
+          {leftQuantity}
+          {unit}
+        </p>
+        <p>{formatDateToGeorgian(new Date(localizedTime))}</p>
+      </div>
+      <div className={styles.btn_wrapper}>
+        <Button title="წაშლა" onClick={handleDeleteHistory} />
+      </div>
     </div>
   );
 }

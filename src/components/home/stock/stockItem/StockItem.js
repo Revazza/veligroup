@@ -6,7 +6,7 @@ function StockItem({ product }) {
     <div className={styles.container}>
       <p>{product?.title}</p>
       <p>
-        {product?.quantity}
+        {product?.quantity.toFixed(3)}
         {product?.unit}
       </p>
     </div>

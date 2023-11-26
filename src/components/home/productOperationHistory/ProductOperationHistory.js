@@ -27,11 +27,20 @@ function ProductOperationHistory() {
       });
   };
 
+  const handleHistoryDelete = (historyToRemove) => {
+    const filteredHistory = data.filter((h) => h !== historyToRemove);
+    setData(filteredHistory);
+  };
+
   return (
     <div className={styles.container}>
       {data?.map((history) => {
         return (
-          <ProductOperationHistoryItem key={history.id} history={history} />
+          <ProductOperationHistoryItem
+            key={history.id}
+            history={history}
+            onHistoryDelete={handleHistoryDelete}
+          />
         );
       })}
       {hasMoreData && (

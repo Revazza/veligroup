@@ -1,14 +1,24 @@
 .container {
-  padding: 20px 10px;
+  padding: 20px 30px;
   box-sizing: border-box;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 7px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   p {
     font-family: "Noto Serif Georgian", serif;
   }
 }
+
+.info_wrapper{
+  display: flex;
+  gap: 20px;
+  p{
+    font-size: 20px;
+  }
+}
+
 
 #added {
   background-color: #a7d397;
@@ -20,4 +30,11 @@
 
 #deleted {
   background-color: #ea5454bd;
+}
+
+.btn_wrapper{
+  button{
+    background-color: #ea5454bd;
+    padding: 10px 20px;
+  }
 }

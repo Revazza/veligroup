@@ -9,7 +9,7 @@ import { useEffect } from "react";
 function ManufactureTemplate({ title, endpoint, submitEndpoint }) {
   const [calculations, setCalculations] = useState();
   const [tons, setTons] = useState(0);
-  const [errorMsg, setErrorMsg] = useState("");
+  const [errorMsgs, setErrorMsgs] = useState([]);
   const handleInputChange = (e) => {
     const tons = +e.target.value;
     setTons(tons);
@@ -44,7 +44,7 @@ function ManufactureTemplate({ title, endpoint, submitEndpoint }) {
     api.post(submitEndpoint, { tons }).then((res) => {
       console.log(res);
       if (res.data.status === 0) {
-        setErrorMsg(res.data.errors[0]);
+        setErrorMsgs(res.data.errors);
       }
     });
   };
@@ -92,7 +92,9 @@ function ManufactureTemplate({ title, endpoint, submitEndpoint }) {
               }ტ)`}</p>
             </div>
           </div>
-          {errorMsg.length !== 0 && <p id={styles.errorMsg}>*{errorMsg}</p>}
+          {errorMsgs.length !== 0 && errorMsgs.map(msg => {
+            return <p id={styles.errorMsg}>*{msg}</p>
+          })}
           <div className={styles.button_wrapper}>
             <Button title="გადამუშავება" onClick={handleSubmit} />
           </div>
