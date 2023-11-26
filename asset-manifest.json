@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/veligroup/static/css/main.d4d58663.css",
+    "main.css": "/veligroup/static/css/main.ae00b7ba.css",
     "main.js": "/veligroup/static/js/main.221d9418.js",
     "index.html": "/veligroup/index.html",
-    "main.d4d58663.css.map": "/veligroup/static/css/main.d4d58663.css.map",
+    "main.ae00b7ba.css.map": "/veligroup/static/css/main.ae00b7ba.css.map",
     "main.221d9418.js.map": "/veligroup/static/js/main.221d9418.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4d58663.css",
+    "static/css/main.ae00b7ba.css",
     "static/js/main.221d9418.js"
   ]
 }
