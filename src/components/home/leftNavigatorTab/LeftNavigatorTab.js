@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./LeftNavigatorTab.module.scss";
 import { Link } from "react-router-dom";
 
-function LeftNavigatorTab() {
+function LeftNavigatorTab({ classes }) {
+  const classNames = `${styles.container} ${classes}`;
   return (
-    <div className={styles.container}>
+    <div className={classNames}>
       <div className={styles.operations_container}>
         <div className={styles.operation_wrapper}>
           <Link to="add">ოპერაციები</Link>

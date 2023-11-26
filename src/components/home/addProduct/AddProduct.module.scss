@@ -12,3 +12,12 @@
 .fraction_wrapper {
   width: fit-content;
 }
+
+
+@media screen and (max-width: 800px) {
+  .container{
+    gap: 0;
+  }
+}
+
+

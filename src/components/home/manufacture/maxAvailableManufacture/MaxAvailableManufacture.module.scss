@@ -20,3 +20,14 @@
     font-family: "Noto Serif Georgian", serif;
   }
 }
+
+
+@media screen and (max-width: 1080px) {
+  #title{
+    font-size: 25px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+

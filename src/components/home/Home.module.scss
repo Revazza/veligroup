@@ -5,6 +5,7 @@
   align-items: center;
   box-sizing: border-box;
   padding: 0 60px;
+  position: relative;
 }
 
 .inner_main_container {
@@ -23,3 +24,38 @@
   box-sizing: border-box;
   padding: 10px;
 }
+
+.left_navigator_tab_inner{
+  display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .left_navigator_tab_inner {
+    display: initial;
+  }
+  .navigator_styles{
+    width: 100%;
+    height: fit-content;
+  }
+  .inner_main_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left_navigator_tab_outer{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1080px) {
+  .container{
+    padding: 0;
+  }
+  .inner_main_container {
+    height: 100%;
+    padding: 0 20px;
+  }
+}
+

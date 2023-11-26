@@ -33,7 +33,7 @@ function ProductOperationHistoryItem({ history, onHistoryDelete }) {
 
   const handleDeleteHistory = () => {
     api.post(`/api/ProductHistory/RemoveProductHistory`, { id }).then((res) => {
-      onHistoryDelete(history)
+      onHistoryDelete(history);
     });
   };
 

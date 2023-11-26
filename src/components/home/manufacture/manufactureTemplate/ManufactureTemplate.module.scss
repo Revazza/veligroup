@@ -16,7 +16,7 @@
   margin-top: 10px;
   font-size: 25px;
   font-family: "Noto Serif Georgian", serif;
-  color: #EF6262;
+  color: #ef6262;
 }
 
 .input_wrapper {
@@ -51,5 +51,39 @@
     padding: 15px;
     font-family: "Noto Serif Georgian", serif;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 95%;
+  }
+  .input_wrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .calculation_wrapper {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  #errorMsg {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .calculation_wrapper {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  #errorMsg {
+    font-size: 16px;
   }
 }
