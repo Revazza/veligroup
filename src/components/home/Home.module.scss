@@ -31,6 +31,10 @@
 
 
 @media screen and (max-width: 1400px) {
+  .container{
+    width: 100%;
+    height: initial;
+  }
   .left_navigator_tab_inner {
     display: initial;
   }
